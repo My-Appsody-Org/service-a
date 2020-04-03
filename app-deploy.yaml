@@ -39,11 +39,12 @@ metadata:
 spec:
   applicationImage: dev.local/service-a
   createKnativeService: false
+  namespace: demo
   env:
   - name: SERVICE_FORMATTER
     value: service-b
   envFrom:
-  - configMap Ref:
+  - configMapRef:
       name: jaeger-config
   expose: true
   livenessProbe:
