@@ -42,6 +42,9 @@ spec:
   env:
   - name: SERVICE_FORMATTER
     value: service-b
+  envFrom:
+  - configMap Ref:
+      name: jaeger-config
   expose: true
   livenessProbe:
     failureThreshold: 12
