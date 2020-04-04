@@ -65,7 +65,7 @@ public class HelloController {
                 .fromHttpUrl(urlPath) //
                 .queryParam("name", name).build(Collections.emptyMap());
         ResponseEntity<String> response = restTemplate.getForEntity(uri, String.class);
-        return response.getBody() + " (v2)";
+        return response.getBody();
 
     }
 
