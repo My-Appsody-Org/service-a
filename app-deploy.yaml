@@ -35,7 +35,7 @@ metadata:
     stack.appsody.dev/version: 0.1.11
     app: service-a
     version: v1
-  name: service-a
+  name: service-a-v1
   namespace: demo
 spec:
   applicationImage: dev.local/service-a
