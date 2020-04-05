@@ -33,7 +33,7 @@ metadata:
     image.opencontainers.org/title: service-a
     stack.appsody.dev/id: my-java-spring-boot2-liberty
     stack.appsody.dev/version: 0.1.11
-    app: service-a
+    app: service-a-v2
     version: v2
   name: service-a
   namespace: demo
@@ -70,4 +70,4 @@ spec:
     type: ClusterIP
   stack: my-java-spring-boot2-liberty
   pullPolicy: Always
-  version: 2.0.1
+  version: 2.0.2
